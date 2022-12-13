@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import './game.css';
 
 
@@ -71,32 +71,32 @@ const memoryGame = {
         this.tilesChecked = [];
         this.canGet = true;
     },
-
+// counter
     startTimer() {
         this.gameTimer = document.querySelector(".game-timer");
         this.gameTimer.innerHTML = "";
 
-        this.czasGry = 0;
+        this.gameTime = 0;
 
         if (!this.gameTimerInterval) {
             this.gameTimerInterval = setInterval(() => {
-                this.czasGry++;
-                if (this.czasGry > 10) {
+                this.gameTime++;
+                if (this.gameTime > 10) {
                     this.gameOver();
                     clearInterval(this.gameTimerInterval);
                     return;
                 }
 
-                this.gameTimer.innerHTML = `<h1>Czas gry: ${this.czasGry}</h1>`;
+                this.gameTimer.innerHTML = `<h1>Czas gry: ${this.gameTime}</h1>`;
             }, 1000);
         }
     },
 
     gameOver() {
         let gameOver = document.querySelector(".game-board");
-        gameOver.innerHTML = '<div><h1 style="color: white">Przegrałeś :(</h1></div>';
+        gameOver.innerHTML = '<div class="text-game"><p>Przegrałeś! Zacznij od nowa :)</p></div>';
     },
-
+//audio here
     startGame() {
         PlayGameAudio();
 
@@ -142,7 +142,7 @@ const memoryGame = {
         }
     }
 }
-
+//audio function...
 function PlayGameAudio() {
     const audio = new Audio('sound/sound2.mp3');
     audio.play();
@@ -152,7 +152,7 @@ function PlayGameAudio() {
     }, false);
 }
 
-// end of timer
+// end of audio function...
 const Game = () => {
     return (
         <main className="game-board-body">
@@ -166,7 +166,7 @@ const Game = () => {
                 <div className="game-timer"></div>
 
                 <p className="line-1 anim-typewriter">Znajdź takie same pary zdjęć, kliknij i połącz je :)</p>
-                <button className="button-bg" onClick={() => memoryGame.startGame()}>Start game</button>
+                <button className="button-bg" onClick={() => memoryGame.startGame()}>Start</button>
 
             </div>
         </main>

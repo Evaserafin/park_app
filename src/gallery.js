@@ -54,6 +54,8 @@ import Img49 from './img/img49.jpg';
 import Img50 from './img/img50.jpg';
 import Img51 from './img/img51.jpg';
 import Img52 from './img/img52.jpg';
+import Img53 from './img/img53.jpg';
+import Img54 from './img/img54.jpg';
 
 const Gallery = () => {
     let data = [
@@ -265,7 +267,16 @@ const Gallery = () => {
             id: 52,
             imgSrc: Img52,
         },
+        {
+            id: 53,
+            imgSrc: Img53,
+        },
+        {
+            id: 54,
+            imgSrc: Img54,
+        },
     ]
+
     const [model, setModel] = useState(false);
     const [tempImgSrc, setTempImgSrc] = useState('');
     const getImg = (imgSrc) => {
@@ -274,22 +285,24 @@ const Gallery = () => {
     }
     return (
         <>
+            <h1 className="header-gallery">Galeria najciekawszych okazów</h1>
             <div className={model ? "model open" : "model"}>
-                <img src={tempImgSrc} alt="animals" />
+                <img src={tempImgSrc} alt="animals"/>
                 <CloseIcon onClick={() => setModel(false)}/>
             </div>
-                <div className="gallery">
+            <div className="gallery">
 
-                    {data.map((item, index) => {
-                        return (
+                {data.map((item, index) => {
+                    return (
+                        <div className="pics" key={index} onClick={() => getImg(item.imgSrc)}>
+                            <img src={item.imgSrc} style={{width: '100%'}} alt="animals"/>
 
-                            <div className="pics" key={index} onClick={() => getImg(item.imgSrc)}>
-                                <img src={item.imgSrc} style={{width: '100%'}} alt="animals" />
-                            </div>
-                        )
-                    })}
-                </div>
-                </>
-            );
-            }
-        export default Gallery;
+                        </div>
+
+                    )
+                })}
+            </div>
+        </>
+    );
+}
+export default Gallery;

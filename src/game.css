@@ -109,6 +109,17 @@
     background-color: #9ADE61;
     color: #FFFFFF;
 }
+.text-game, p {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Anonymous Pro', monospace;
+    color: #9ADE61;
+}
+.game-timer {
+    color: #9ADE61;
+    font-size: 60px;
+    margin-bottom: 35px;
+}
 /* Text - animation - game */
 .line-1{
     color: rgba(255,255,255,.75);
@@ -152,4 +163,22 @@
 @keyframes blinkTextCursor{
     from{border-right-color: rgba(255,255,255,.75);}
     to{border-right-color: transparent;}
+}
+@media (max-width: 991px) {
+    .gallery {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+
+    }
+}
+@media (max-width: 480px) {
+    .gallery {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: calc(100% - 100px);
+        -moz-column-width: calc(100% - 100px);
+        column-width: calc(100% - 100px);
+    }
 }

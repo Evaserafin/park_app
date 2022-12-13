@@ -31,7 +31,7 @@ class Form extends React.Component {
                     <div className="mt-3">
                         <label htmlFor="exampleFormControlInput1" className="form-label">Adres mailowy</label>
                         <input type="email" className="form-control" id="exampleFormControlInput1"
-                               placeholder="name@example.com" />
+                               placeholder="sekretariat@biebrza.org.pl" />
                     </div>
                     <div className="mt-3">
                         <label htmlFor="exampleFormControlTextarea1" className="form-label">Tekst</label>

@@ -1,0 +1,23 @@
+.park-main {
+    min-height: 100vh;
+    text-align: center;
+    cursor: pointer;
+    column-count: 2;
+}
+h2 {
+    color: #FFFFFF;
+    font-size: 2em;
+    font-family: 'Anonymous Pro', monospace;
+}
+.park-description {
+
+    color: #FFFFFF;
+    font-size: 2em;
+    font-family: 'Anonymous Pro', monospace;
+}
+.text-information-park {
+    text-align: justify;
+    font-family: 'Anonymous Pro', monospace;
+    padding: 10px;
+    margin: 30px;
+}

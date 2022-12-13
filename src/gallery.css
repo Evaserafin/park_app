@@ -9,15 +9,31 @@
     background: url("./images/zuraw.jpg") no-repeat center/cover;
     min-height: 100vh;
 }
+.header-gallery {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #6cc464;
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    padding: 30px;
+    letter-spacing: 10px;
+    border-width: 1px;
+    border-style: double;
+    border-color: #6cc464;
+}
 .gallery .pics {
-
     transition: all 350ms ease;
     cursor: pointer;
     margin-bottom: 12px;
 }
+
 .gallery .pics:hover {
     filter: opacity(.8);
 }
+
 @media (max-width: 991px) {
     .gallery {
         -webkit-column-count: 2;
