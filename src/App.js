@@ -20,15 +20,15 @@ function App() {
         <div className="App">
 
             <Navbar collapseOnSelect expand="lg" variant="light"
-                    style={{backgroundColor: "rgba(129, 129, 129, 0.3)", fontSize: 25}}>
+                    style={{backgroundColor: "rgba(129, 129, 129, 0.3)", fontSize: 18}}>
 
                 <Link className="nav-link navbar-brand" to="/">
                     <div style={{
                         color: "forestgreen",
                         fontFamily: "'Anonymous Pro', monospace",
-                        fontSize: 30
+                        fontSize: 22
                     }}>
-                        <span style={{color: "white", fontWeight: 600, fontSize: 40}}>Biebrzański</span> Park Narodowy
+                        <span style={{color: "white", fontWeight: 600, fontSize: 30}}>Biebrzański</span> Park Narodowy
                     </div>
                 </Link>
 
