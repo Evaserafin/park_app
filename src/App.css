@@ -24,14 +24,13 @@ body {
     padding: 50px 0;
     margin: 30px 0;
 }
-
 .picture_park {
     background: url("./images/park_logo.jpg") no-repeat center/cover;
     flex-wrap: wrap;
-    max-width: 500px;
+    max-width: 300px;
     width: 100%;
     border-radius: 50%;
-    border: 40px solid #696969;
+    border: 20px solid #696969;
     --bs-border-opacity: 0.7;
     margin-top: 30px;
     box-shadow: rgba(0, 0, 0, 0.17) 0 -23px 25px 0 inset, rgba(0, 0, 0, 0.15) 0 -36px 30px 0 inset, rgba(0, 0, 0, 0.1) 0 -79px 40px 0 inset, rgba(0, 0, 0, 0.06) 0 2px 1px, rgba(0, 0, 0, 0.09) 0 4px 2px, rgba(0, 0, 0, 0.09) 0 8px 4px, rgba(0, 0, 0, 0.09) 0 16px 8px, rgba(0, 0, 0, 0.09) 0 32px 16px;
@@ -59,15 +58,15 @@ body {
     text-decoration: none;
     background-color: white;
     flex-wrap: wrap;
-    max-width: 600px;
+    max-width: 400px;
     width: 100%;
-    height: 80px;
+    height: 60px;
     box-shadow: rgba(0, 0, 0, 0.17) 0 -23px 25px 0 inset, rgba(0, 0, 0, 0.15) 0 -36px 30px 0 inset, rgba(0, 0, 0, 0.1) 0 -79px 40px 0 inset, rgba(0, 0, 0, 0.06) 0 2px 1px, rgba(0, 0, 0, 0.09) 0 4px 2px, rgba(0, 0, 0, 0.09) 0 8px 4px, rgba(0, 0, 0, 0.09) 0 16px 8px, rgba(0, 0, 0, 0.09) 0 32px 16px;
     margin: 20px;
     border-radius: 40px;
     border: none;
     font-size: 30px;
-    padding: 20px;
+    padding: 8px;
     text-align: center;
     color: #003000;
     font-weight: 400;

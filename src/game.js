@@ -87,7 +87,7 @@ const memoryGame = {
                     return;
                 }
 
-                this.gameTimer.innerHTML = `<h1>Czas gry: ${this.gameTime}</h1>`;
+                this.gameTimer.innerHTML = `<div>Czas gry: ${this.gameTime}</div>`;
             }, 1000);
         }
     },
@@ -164,7 +164,7 @@ const Game = () => {
                 <div className="game-score">
                     0
                 </div>
-                <div className="game-timer"></div>
+                <div className="game-timer" style={{}}></div>
 
                 <p className="line-2">Znajdź takie same pary zdjęć, kliknij i połącz je :)</p>
                 <button className="button-bg" onClick={() => memoryGame.startGame()}>Start</button>
