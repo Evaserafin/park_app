@@ -9,19 +9,18 @@
     min-height: 100vh;
 }
 .header-gallery {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    word-break: break-word;
     color: #6cc464;
     font-family: 'Anonymous Pro', monospace;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 800;
     text-align: center;
     padding: 30px;
     letter-spacing: 10px;
-    border-width: 1px;
+    border-width: 2px;
     border-style: double;
     border-color: #6cc464;
+    margin: 30px 0 20px;
 }
 .gallery .pics {
     transition: all 350ms ease;

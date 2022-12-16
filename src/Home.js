@@ -14,10 +14,10 @@ function Home() {
                 <h1>Witamy na stronie Biebrzńskiego Parku Narodowego</h1>
             </div>
             <div className="navigation">
-                <Link className="button_menu px-3" to="/" >Strona Główna</Link>
+                <Link className="button_menu px-3" to="/gallery" >Galeria</Link>
                 <Link className="button_menu px-3" to="/game">Gra</Link>
                 <Link className="button_menu px-3" to="/mapa">Mapa</Link>
-                <Link className="button_menu px-3" to="/gallery">Galeria</Link>
+                <Link className="button_menu px-3" to="/park">O Parku</Link>
 
             </div>
 

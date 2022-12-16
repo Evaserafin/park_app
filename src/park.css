@@ -1,25 +1,26 @@
 .park-main {
     min-height: 100vh;
     text-align: center;
-    cursor: pointer;
-    column-count: 2;
 }
 .park-picture {
     max-width: 900px;
     width: 100%;
+    margin: 40px 0 50px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0 -23px 25px 0 inset, rgba(0, 0, 0, 0.15) 0 -36px 30px 0 inset, rgba(0, 0, 0, 0.1) 0 -79px 40px 0 inset, rgba(0, 0, 0, 0.06) 0 2px 1px, rgba(0, 0, 0, 0.09) 0 4px 2px, rgba(0, 0, 0, 0.09) 0 8px 4px, rgba(0, 0, 0, 0.09) 0 16px 8px, rgba(0, 0, 0, 0.09) 0 32px 16px;
 }
 h2 {
     color: #FFFFFF;
     font-size: 40px;
     font-family: 'Anonymous Pro', monospace;
 }
-.text-information-park {
+.text-information-park, .about-park {
     text-align: justify;
     color: #FFFFFF;
     font-size: 20px;
     font-family: 'Anonymous Pro', monospace;
     padding: 10px;
-    margin: 30px;
+    margin: 20px 0 40px;
 }
 
 

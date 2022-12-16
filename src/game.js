@@ -81,7 +81,7 @@ const memoryGame = {
         if (!this.gameTimerInterval) {
             this.gameTimerInterval = setInterval(() => {
                 this.gameTime++;
-                if (this.gameTime > 30) {
+                if (this.gameTime > 60) {
                     this.gameOver();
                     clearInterval(this.gameTimerInterval);
                     return;

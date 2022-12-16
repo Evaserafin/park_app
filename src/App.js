@@ -1,6 +1,6 @@
 import {Routes, Route, Outlet, Link, Form} from "react-router-dom"
-import React, {useState, useEffect} from 'react';
-import DotLoader from "react-spinners/DotLoader";
+import React from 'react';
+
 import './gallery.css'
 import './App.css';
 import Home from './Home';
@@ -11,18 +11,11 @@ import Kontakt from './kontakt';
 import Gallery from "./gallery";
 import Footer from "./footer";
 import {Nav, Navbar, NavDropdown} from "react-bootstrap";
-import {GiCircleForest} from 'react-icons/fa';
+
 
 
 function App() {
-    //const [loading, setLoading] = useState(false);
-//
-    //useEffect(() => {
-    //    setLoading(true);
-    //    setTimeout(() => {
-    //        setLoading(false);
-    //    }, 8000);
-    //}, []);
+
     return (
         <div className="App">
 
