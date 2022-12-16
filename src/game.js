@@ -81,7 +81,7 @@ const memoryGame = {
         if (!this.gameTimerInterval) {
             this.gameTimerInterval = setInterval(() => {
                 this.gameTime++;
-                if (this.gameTime > 10) {
+                if (this.gameTime > 30) {
                     this.gameOver();
                     clearInterval(this.gameTimerInterval);
                     return;
@@ -93,8 +93,8 @@ const memoryGame = {
     },
 
     gameOver() {
-        let gameOver = document.querySelector(".game-board");
-        gameOver.innerHTML = '<div class="text-game"><p>Przegrałeś! Zacznij od nowa :)</p></div>';
+        //let gameOver = document.querySelector(".game-board");
+        //gameOver.innerHTML = '';
     },
 //audio here
     startGame() {
@@ -142,7 +142,8 @@ const memoryGame = {
         }
     }
 }
-//audio function...
+
+//start of audio function...
 function PlayGameAudio() {
     const audio = new Audio('sound/sound2.mp3');
     audio.play();
@@ -165,7 +166,7 @@ const Game = () => {
                 </div>
                 <div className="game-timer"></div>
 
-                <p className="line-1 anim-typewriter">Znajdź takie same pary zdjęć, kliknij i połącz je :)</p>
+                <p className="line-2">Znajdź takie same pary zdjęć, kliknij i połącz je :)</p>
                 <button className="button-bg" onClick={() => memoryGame.startGame()}>Start</button>
 
             </div>

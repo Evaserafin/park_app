@@ -11,61 +11,57 @@ import Kontakt from './kontakt';
 import Gallery from "./gallery";
 import Footer from "./footer";
 import {Nav, Navbar, NavDropdown} from "react-bootstrap";
+import {GiCircleForest} from 'react-icons/fa';
+
 
 function App() {
-    const [loading, setLoading] = useState(false);
-
-    useEffect(() => {
-        setLoading(true);
-        setTimeout(() => {
-            setLoading(false);
-        }, 8000);
-    }, []);
+    //const [loading, setLoading] = useState(false);
+//
+    //useEffect(() => {
+    //    setLoading(true);
+    //    setTimeout(() => {
+    //        setLoading(false);
+    //    }, 8000);
+    //}, []);
     return (
         <div className="App">
-            {loading ? (
-                    <DotLoader size={30} color={"#6cc464"} loading={loading} />
-                ) :
 
-                <Navbar collapseOnSelect expand="lg" variant="light"
-                        style={{backgroundColor: "rgba(129, 129, 129, 0.3)", fontSize: 25}}>
+            <Navbar collapseOnSelect expand="lg" variant="light"
+                    style={{backgroundColor: "rgba(129, 129, 129, 0.3)", fontSize: 25}}>
 
-                    <Link className="nav-link" style={{color: "#6cc464", padding: 40}} to="/">
-                        <Navbar.Brand href="#home">
-                        <span style={{
-                            color: "forestgreen",
-                            padding: 80,
-                            fontFamily: "'Anonymous Pro', monospace",
-                            fontSize: 30
-                        }}>Biebrzański Park Narodowy</span>
-                        </Navbar.Brand>
-                    </Link>
+                <Link className="nav-link navbar-brand" to="/">
+                    <div style={{
+                        color: "forestgreen",
+                        fontFamily: "'Anonymous Pro', monospace",
+                        fontSize: 30
+                    }}>
+                        <span style={{color: "white", fontWeight: 600, fontSize: 40}}>Biebrzański</span> Park Narodowy
+                    </div>
+                </Link>
 
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
-                    <Navbar.Collapse style={{fontFamily: "'Anonymous Pro', monospace"}} id="responsive-navbar-nav">
-                        <Nav className="mr-auto">
-                            <Link className="nav-link" style={{color: "#6cc464", padding: 40}} to="/">Strona
-                                Główna</Link>
-                            <Link className="nav-link" style={{color: "#6cc464", padding: 40}} to="/game">Gra</Link>
-                            <Link className="nav-link" style={{color: "#6cc464", padding: 40}} to="/mapa">Mapa</Link>
-                            <Link className="nav-link" style={{color: "#6cc464", padding: 40}}
-                                  to="/park">O Parku</Link>
-                            <Link className="nav-link" style={{color: "#6cc464", padding: 40}}
-                                  to="/gallery">Galeria</Link>
-                            <Link className="nav-link" style={{color: "#6cc464", padding: 40}}
-                                  to="/kontakt">Kontakt</Link>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Navbar>
-            }
-            <Routes>
-                <Route index element={<Home/>}/>
-                <Route path="/game" element={<Game/>}/>
-                <Route path="/mapa" element={<Mapa/>}/>
-                <Route path="/park" element={<Park/>}/>
-                <Route path="/kontakt" element={<Kontakt/>}/>
-                <Route path="/gallery" element={<Gallery/>}/>
-            </Routes>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+                <Navbar.Collapse style={{fontFamily: "'Anonymous Pro', monospace"}} id="responsive-navbar-nav">
+                    <Nav className="mr-auto" style={{flexWrap: 'wrap'}}>
+                        <Link className="nav-link" to="/">Strona Główna</Link>
+                        <Link className="nav-link" to="/game">Gra</Link>
+                        <Link className="nav-link" to="/mapa">Mapa</Link>
+                        <Link className="nav-link" to="/park">O Parku</Link>
+                        <Link className="nav-link" to="/gallery">Galeria</Link>
+                        <Link className="nav-link" to="/kontakt">Kontakt</Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar>
+
+            <div className="container">
+                <Routes>
+                    <Route index element={<Home/>}/>
+                    <Route path="/game" element={<Game/>}/>
+                    <Route path="/mapa" element={<Mapa/>}/>
+                    <Route path="/park" element={<Park/>}/>
+                    <Route path="/kontakt" element={<Kontakt/>}/>
+                    <Route path="/gallery" element={<Gallery/>}/>
+                </Routes>
+            </div>
 
             <Footer/>
 

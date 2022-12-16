@@ -4,20 +4,23 @@
     cursor: pointer;
     column-count: 2;
 }
+.park-picture {
+    max-width: 900px;
+    width: 100%;
+}
 h2 {
     color: #FFFFFF;
-    font-size: 2em;
-    font-family: 'Anonymous Pro', monospace;
-}
-.park-description {
-
-    color: #FFFFFF;
-    font-size: 2em;
+    font-size: 40px;
     font-family: 'Anonymous Pro', monospace;
 }
 .text-information-park {
     text-align: justify;
+    color: #FFFFFF;
+    font-size: 20px;
     font-family: 'Anonymous Pro', monospace;
     padding: 10px;
     margin: 30px;
 }
+
+
+

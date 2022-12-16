@@ -3,11 +3,11 @@ import './kontakt.css';
 
 
 
-class Form extends React.Component {
+class Kontakt extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            value: 'Napisz do nas wiadomość...'
+            value: 'Wpisz wiadomość...'
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -34,7 +34,7 @@ class Form extends React.Component {
                                placeholder="sekretariat@biebrza.org.pl" />
                     </div>
                     <div className="mt-3">
-                        <label htmlFor="exampleFormControlTextarea1" className="form-label">Tekst</label>
+                        <label htmlFor="exampleFormControlTextarea1" className="form-label">Napisz do nas</label>
                         <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"
                                   value={this.state.value} onChange={this.handleChange}></textarea>
                     </div>
@@ -46,4 +46,4 @@ class Form extends React.Component {
     }
 }
 
-export default Form;
+export default Kontakt;

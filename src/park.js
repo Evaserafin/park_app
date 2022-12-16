@@ -1,11 +1,16 @@
 import React from 'react';
 import './park.css'
+import o_parku from './images/o_parku.jpg';
+
 
 const Park = () => {
     return (
+
         <div className="park-main">
+            <img className="park-picture" src={o_parku} alt="Zdjęcie parku z drona" />
         <div className="about-park">
-            <h2>O parku</h2>
+
+            <h2>O PARKU</h2>
             <div className="park-description">
                 <p className="text-information-park">Biebrzański Park Narodowy (BbPN) został utworzony na podstawie Rozporządzenia Rady Ministrów z dnia 9
                 września 1993 roku jako 18-ty z kolei polski park narodowy. Obecnie, spośród 23 polskich parków
@@ -35,7 +40,7 @@ const Park = () => {
                 Specjalnej Ochrony Ptaków (PLB 200006 Ostoja Biebrzańska o powierzchni 148 509,33 ha) i Specjalny Obszar
                 Ochrony Siedlisk (PLH 200008 Dolina Biebrzy o powierzchni 121 206,23 ha).
                 </p>
-                <p>autor: A. Grygoruk, data: 2020-03-31</p>
+                <p className="text-information-park">autor: A. Grygoruk, data: 2020-03-31</p>
             </div>
         </div>
         </div>
@@ -43,3 +48,4 @@ const Park = () => {
 }
 
 export default Park;
+

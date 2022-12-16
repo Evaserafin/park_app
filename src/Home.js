@@ -5,12 +5,14 @@ import Dropdown from './button';
 import {Link} from "react-router-dom";
 import {Nav} from "react-bootstrap";
 
-
 function Home() {
     return (
         <main>
-            <img className="picture_park"></img>
-            <p className="line-2 anim-typewriter">Witamy na stronie Biebrzńskiego Parku Narodowego</p>
+            <div className="picture_park">
+            </div>
+            <div className="line-2" style={{maxWidth: '100%'}}>
+                <h1>Witamy na stronie Biebrzńskiego Parku Narodowego</h1>
+            </div>
             <div className="navigation">
                 <Link className="button_menu px-3" to="/" >Strona Główna</Link>
                 <Link className="button_menu px-3" to="/game">Gra</Link>
