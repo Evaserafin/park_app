@@ -158,15 +158,20 @@ const Game = () => {
     return (
         <main className="game-board-body">
             <div className="game">
-                <div className="game-board">
+                <div className="game-board" style={{position: "relative", width: "100%"}}>
+                    <div className="game-board" style={{position: "absolute",
+                        width: "100%",
+                        height: "100%"}}></div>
                 </div>
 
                 <div className="game-score">
                     0
                 </div>
-                <div className="game-timer" style={{}}></div>
+                <div className="game-timer"></div>
 
-                <p className="line-2">Znajdź takie same pary zdjęć, kliknij i połącz je :)</p>
+                <div className="line-2" style={{maxWidth: '100%'}}>
+                    <h1 style={{fontSize: 25, display: "flex", flexWrap: "wrap"}}>Znajdź takie same pary zdjęć, kliknij i połącz je :)</h1>
+                </div>
                 <button className="button-bg" onClick={() => memoryGame.startGame()}>Start</button>
 
             </div>

@@ -1,6 +1,7 @@
 
 body {
     min-width: 320px;
+    scroll-behavior: smooth;
 }
 
 .App {
@@ -22,7 +23,6 @@ body {
     justify-content: center;
     align-items: center;
     padding: 50px 0;
-    margin: 30px 0;
 }
 .picture_park {
     background: url("./images/park_logo.jpg") no-repeat center/cover;
@@ -65,8 +65,8 @@ body {
     margin: 20px;
     border-radius: 40px;
     border: none;
-    font-size: 30px;
-    padding: 8px;
+    font-size: 20px;
+    padding: 12px;
     text-align: center;
     color: #003000;
     font-weight: 400;

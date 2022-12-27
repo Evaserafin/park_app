@@ -4,7 +4,7 @@ import './footer.css';
 const Footer = () => {
     return (
         <div className="main-footer">
-            <div className="container-footer" style={{display: "flex", flexWrap: "wrap"}}>
+            <div className="container-footer" >
                 <div className="row">
                     {/*Column1 */}
                     <div className="col">

@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const BasicExample = () => {
     return (
         <Dropdown>
-            <Dropdown.Toggle style={{width:500, height: 100, background: "black", color: "white"}} variant="success" id="dropdown-basic">
+            <Dropdown.Toggle style={{width:500, height: 800, background: "black", color: "white"}} variant="success" id="dropdown-basic">
                 Dropdown Button
             </Dropdown.Toggle>
 

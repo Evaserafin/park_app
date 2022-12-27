@@ -8,9 +8,10 @@ const Park = () => {
 
         <div className="park-main">
             <img className="park-picture" src={o_parku} alt="Zdjęcie parku z drona" />
+            <img className="park-picture" src={o_parku} alt="Zdjęcie parku z drona" />
         <div className="about-park">
 
-            <h2>O PARKU</h2>
+            <h2>Biebrzański Park Narodowy</h2>
             <div className="park-description">
                 <p className="text-information-park">Biebrzański Park Narodowy (BbPN) został utworzony na podstawie Rozporządzenia Rady Ministrów z dnia 9
                 września 1993 roku jako 18-ty z kolei polski park narodowy. Obecnie, spośród 23 polskich parków

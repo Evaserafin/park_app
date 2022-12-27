@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import CloseIcon from '@mui/icons-material/Close';
 import './gallery.css';
 
@@ -282,6 +282,7 @@ const Gallery = () => {
     const getImg = (imgSrc) => {
         setTempImgSrc(imgSrc);
         setModel(true);
+
     }
     return (
         <>
@@ -301,7 +302,34 @@ const Gallery = () => {
 
                     )
                 })}
+
             </div>
+            useEffect(() => {
+            // 👇️ scroll to top on page load
+            window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+        }
+        }, []);
+            <button className="bounce"
+                onClick={() => {
+                    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+                }}
+                style={{
+                    position: 'fixed',
+                    padding: '1rem',
+                    borderRadius: "50%",
+                    border: "none",
+                    bottom: '130px',
+                    backgroundColor: "#696969",
+                    color: '#9ADE61',
+                    textAlign: 'center',
+                    right: "50px",
+                    height: "50px",
+                    width: "50px",
+                    fontSize: "12px",
+                }}
+            >
+                Top
+            </button>
         </>
     );
 }

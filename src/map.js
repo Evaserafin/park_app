@@ -1,20 +1,24 @@
 import React, {useEffect, useRef, useState} from "react";
 import './map.css';
+import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
 mapboxgl.accessToken = 'pk.eyJ1IjoiZXZhMTk4MHNlcmFmaW4iLCJhIjoiY2xiOGJxMnl4MGh0ajNvcnNiZTNya2lnZyJ9._TGQwlo7pAN68ZNZ5QRIBg';
+
+
+
 
 function Map () {
     const mapContainer = useRef(null);
     const map = useRef(null);
-    const [lng, setLng] = useState(22.6613);
-    const [lat, setLat] = useState(53.4666);
-    const [zoom, setZoom] = useState(9);
+    const [lng, setLng] = useState(22.6580);
+    const [lat, setLat] = useState(53.4227);
+    const [zoom, setZoom] = useState(16.68);
 
     useEffect(() => {
         if (map.current) return; // initialize map only once
         map.current = new mapboxgl.Map({
             container: mapContainer.current,
-            style: 'mapbox://styles/mapbox/outdoors-v12',
+            style: 'mapbox://styles/mapbox/satellite-streets-v12',
             center: [lng, lat],
             zoom: zoom
         });

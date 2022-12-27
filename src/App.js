@@ -2,13 +2,15 @@ import {Routes, Route, Outlet, Link, Form} from "react-router-dom"
 import React from 'react';
 
 import './gallery.css'
+import './gallery2.css'
 import './App.css';
 import Home from './Home';
 import Game from './game';
 import Mapa from './map';
 import Park from './park';
 import Kontakt from './kontakt';
-import Gallery from "./gallery";
+import Gallery from './gallery';
+import Gallery2 from './gallery2';
 import Footer from "./footer";
 import {Nav, Navbar, NavDropdown} from "react-bootstrap";
 
@@ -40,6 +42,7 @@ function App() {
                         <Link className="nav-link" to="/mapa">Mapa</Link>
                         <Link className="nav-link" to="/park">O Parku</Link>
                         <Link className="nav-link" to="/gallery">Galeria</Link>
+                        <Link className="nav-link" to="/gallery_animals">Galeria</Link>
                         <Link className="nav-link" to="/kontakt">Kontakt</Link>
                     </Nav>
                 </Navbar.Collapse>
@@ -53,6 +56,7 @@ function App() {
                     <Route path="/park" element={<Park/>}/>
                     <Route path="/kontakt" element={<Kontakt/>}/>
                     <Route path="/gallery" element={<Gallery/>}/>
+                    <Route path="/gallery2" element={<Gallery2/>}/>
                 </Routes>
             </div>
 
