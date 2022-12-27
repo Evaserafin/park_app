@@ -275,6 +275,7 @@ const Gallery = () => {
             id: 54,
             imgSrc: Img54,
         },
+
     ]
 
     const [model, setModel] = useState(false);
