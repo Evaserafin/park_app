@@ -5,7 +5,7 @@
     -webkit-column-width: calc(33% - 33px);
     -moz-column-width: calc(33% - 33px);
     column-width:calc(33% - 33px);
-    padding: 0 12px;
+    padding: 0 12px 12px;
     min-height: 100vh;
 }
 .header-gallery2 {

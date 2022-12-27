@@ -42,7 +42,7 @@ function App() {
                         <Link className="nav-link" to="/mapa">Mapa</Link>
                         <Link className="nav-link" to="/park">O Parku</Link>
                         <Link className="nav-link" to="/gallery">Galeria</Link>
-                        <Link className="nav-link" to="/gallery_animals">Galeria</Link>
+                        <Link className="nav-link" to="/gallery2">Galeria2</Link>
                         <Link className="nav-link" to="/kontakt">Kontakt</Link>
                     </Nav>
                 </Navbar.Collapse>

@@ -22,6 +22,13 @@ import Img71 from './img/img71.jpg';
 import Img72 from './img/img72.jpg';
 import Img73 from './img/img73.jpg';
 import Img74 from './img/img74.jpg';
+import Img75 from './img/img75.jpg';
+import Img76 from './img/img76.jpg';
+import Img77 from './img/img77.jpg';
+import Img78 from './img/img78.jpg';
+import Img79 from './img/img79.jpg';
+import Img80 from './img/img80.jpg';
+import Img81 from './img/img81.jpg';
 
 
 const Gallery2 = () => {
@@ -106,7 +113,34 @@ const Gallery2 = () => {
             id: 74,
             imgSrc: Img74,
         },
-
+        {
+            id: 75,
+            imgSrc: Img75,
+        },
+        {
+            id: 76,
+            imgSrc: Img76,
+        },
+        {
+            id: 77,
+            imgSrc: Img77,
+        },
+        {
+            id: 78,
+            imgSrc: Img78,
+        },
+        {
+            id: 79,
+            imgSrc: Img79,
+        },
+        {
+            id: 80,
+            imgSrc: Img80,
+        },
+        {
+            id: 81,
+            imgSrc: Img81,
+        },
     ]
 
     const [model, setModel] = useState(false);
@@ -136,11 +170,7 @@ const Gallery2 = () => {
                 })}
 
             </div>
-            useEffect(() => {
-            // 👇️ scroll to top on page load
-            window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
-        }
-        }, []);
+
             <button className="bounce"
                 onClick={() => {
                     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
