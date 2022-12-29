@@ -3,8 +3,9 @@
     text-align: center;
 }
 .park-picture {
-    max-width: 900px;
-    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
     margin: 40px 0 50px;
     filter: opacity(.8);
     border-radius: 20px;
@@ -26,7 +27,7 @@ h2 {
 .text-information-park, .about-park {
     text-align: justify;
     color: #FFFFFF;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Anonymous Pro', monospace;
     padding: 10px;
     margin: 20px 0 40px;

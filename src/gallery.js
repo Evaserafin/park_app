@@ -57,6 +57,7 @@ import Img52 from './img/img52.jpg';
 import Img53 from './img/img53.jpg';
 import Img54 from './img/img54.jpg';
 
+
 const Gallery = () => {
     let data = [
         {

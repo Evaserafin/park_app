@@ -29,6 +29,12 @@ import Img78 from './img/img78.jpg';
 import Img79 from './img/img79.jpg';
 import Img80 from './img/img80.jpg';
 import Img81 from './img/img81.jpg';
+import Img82 from './img/img82.jpg';
+import Img83 from './img/img83.jpg';
+import Img84 from './img/img84.jpg';
+import Img85 from './img/img85.jpg';
+import Img86 from './img/img86.jpg';
+import Img87 from './img/img87.jpg';
 
 
 const Gallery2 = () => {
@@ -144,6 +150,26 @@ const Gallery2 = () => {
         {
             id: 82,
             imgSrc: Img82,
+        },
+        {
+            id: 83,
+            imgSrc: Img83,
+        },
+        {
+            id: 84,
+            imgSrc: Img84,
+        },
+        {
+            id: 85,
+            imgSrc: Img85,
+        },
+        {
+            id: 86,
+            imgSrc: Img86,
+        },
+        {
+            id: 87,
+            imgSrc: Img87,
         },
     ]
 

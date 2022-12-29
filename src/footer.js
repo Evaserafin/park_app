@@ -4,10 +4,10 @@ import './footer.css';
 const Footer = () => {
     return (
         <div className="main-footer">
-            <div className="container-footer" >
+            <div className="container-footer">
                 <div className="row">
                     {/*Column1 */}
-                    <div className="col">
+                    <div className="col-12 col-sm-6 col-md-4 col-lg-4">
                         <h3>Biebrzański Park Narodowy</h3>
                         <ul className="list-unstyled">
                             <li>Osowiec-Twierdza 8</li>
@@ -15,7 +15,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     {/*Column2 */}
-                    <div className="col">
+                    <div className="col-12 col-sm-6 col-md-4 col-lg-4">
                         <h3>E-mail:</h3>
                         <ul className="list-unstyled">
                             <li>sekretariat@biebrza.org.pl</li>
@@ -23,7 +23,7 @@ const Footer = () => {
                     </div>
 
                     {/*Column3 */}
-                    <div className="col">
+                    <div className="col-12 col-sm-6 col-md-4 col-lg-4">
                         <h3>Kontakt telefoniczny:</h3>
                         <ul className="list-unstyled">
                             <li>+48 85 738 06 20</li>
