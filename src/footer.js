@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div className="main-footer">
             <div className="container-footer">
-                <div className="row">
+                <div className="row" style={{margin: "auto"}}>
                     {/*Column1 */}
                     <div className="col-12 col-sm-6 col-md-4 col-lg-4">
                         <h3>Biebrzański Park Narodowy</h3>
