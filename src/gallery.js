@@ -324,6 +324,7 @@ const Gallery = () => {
                     height: "50px",
                     width: "50px",
                     fontSize: "12px",
+                    zIndex: "999",
                 }}
             >
                 Top

@@ -12,8 +12,12 @@ const Park = () => {
 
             <h2>Biebrzański Park Narodowy</h2>
             <div className="park-description">
-                <p className="text-information-park" class="inside p-5 ps-3 mx-auto"><img className="park-picture" src={o_parku} alt="Zdjęcie parku wykonane z drona" class="img-thumbnail float-sm-start"
-                     style={{width: 500}}/>
+
+                    <img className="park-picture" src={o_parku} alt="Zdjęcie parku wykonane z drona" class="img-thumbnail float-sm-start"
+                     style={{width: 500, marginRight: 20, padding: 5}}/>
+                <div className="text-park" style={{margin: 20}}>
+                <p className="text-information-park" className="inside ps-sm-5 mx-auto"
+                   style={{textAlign: "justify", color: "white"}}>
                 Biebrzański Park Narodowy (BbPN) został utworzony na podstawie Rozporządzenia Rady Ministrów z dnia 9
                 września 1993 roku jako 18-ty z kolei polski park narodowy. Obecnie, spośród 23 polskich parków
                 narodowych BbPN jest największym parkiem narodowym i jednym z większych w Europie. Celem Parku jest
@@ -42,6 +46,7 @@ const Park = () => {
                 Ochrony Siedlisk (PLH 200008 Dolina Biebrzy o powierzchni 121 206,23 ha).
                 </p>
                 <p className="text-information-park">autor: A. Grygoruk, data: 2020-03-31</p>
+                </div>
             </div>
         </div>
         </div>

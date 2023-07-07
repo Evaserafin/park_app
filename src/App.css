@@ -13,10 +13,12 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
 .nav-link {
     color: #6cc464 !important;
     padding: 25px 40px !important;
 }
+
 .navigation {
     display: flex;
     flex-wrap: wrap;
@@ -24,6 +26,7 @@ body {
     align-items: center;
     padding: 50px 0;
 }
+
 .picture_park {
     background: url("./images/park_logo.jpg") no-repeat center/cover;
     flex-wrap: wrap;
@@ -76,6 +79,11 @@ body {
 .button_menu:hover {
     background-color: #9ADE61;
     color: #FFFFFF;
+}
+
+.dropdown-menu. show {
+    color: #9ADE61;
+    background-color: rgba(0, 0, 0, 0.17);
 }
 
 @media (max-width: 991px) {

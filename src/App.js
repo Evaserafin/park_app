@@ -12,7 +12,8 @@ import Kontakt from './kontakt';
 import Gallery from './gallery';
 import Gallery2 from './gallery2';
 import Footer from "./footer";
-import {Nav, Navbar, NavDropdown} from "react-bootstrap";
+import {Nav, Navbar, NavDropdown, Dropdown} from "react-bootstrap";
+import {calculateRgba} from "react-spinners/helpers/colors";
 
 
 
@@ -41,8 +42,10 @@ function App() {
                         <Link className="nav-link" to="/game">Gra</Link>
                         <Link className="nav-link" to="/mapa">Mapa</Link>
                         <Link className="nav-link" to="/park">O Parku</Link>
-                        <Link className="nav-link" to="/gallery">Ptaki</Link>
-                        <Link className="nav-link" to="/gallery2">Zwierzęta</Link>
+                        <NavDropdown title="Galeria" id="basic-nav-dropdown">
+                            <NavDropdown.Item href="/gallery">Ptaki</NavDropdown.Item>
+                            <NavDropdown.Item href="/gallery2">Zwierzęta</NavDropdown.Item>
+                        </NavDropdown>
                         <Link className="nav-link" to="/kontakt">Kontakt</Link>
                     </Nav>
                 </Navbar.Collapse>
